@@ -1,112 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Swiper复制</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
     <div id="content">
-        <header>
-            <ul id="logo_menu">
-                <li class="top" id="logo">
-                    <img src="img/logo.png" alt="logo图">
-                </li>
-                <li class="top" id="menu">
-                    <div><a href="#">首页</a></div>
-                    <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              在线演示
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">基础演示</a></li>
-                              <li><a href="#">移动应用</a></li>
-                              <li><a href="#">PC应用</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                    </div>
-                    <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              在线演示
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">基础演示</a></li>
-                              <li><a href="#">移动应用</a></li>
-                              <li><a href="#">PC应用</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                    </div>
-                    <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              在线演示
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">基础演示</a></li>
-                              <li><a href="#">移动应用</a></li>
-                              <li><a href="#">PC应用</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                    </div>
-                    <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              在线演示
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">基础演示</a></li>
-                              <li><a href="#">移动应用</a></li>
-                              <li><a href="#">PC应用</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                    </div>
-                    <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              在线演示
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">基础演示</a></li>
-                              <li><a href="#">移动应用</a></li>
-                              <li><a href="#">PC应用</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                    </div>
-                    
-                </li>
-                <li class="top" id="search">
-                    <div>
-
-                        <form action="">
-                            <input type="text">
-                            <input type="button" value="搜索">
-                        </form>
-                    </div>
-                </li>
-            </ul>
-        </header>
-        <div id="main">
-            <ul id="banner">
-                <li></li>
-            </ul>
+      <header>
+        <div class="inner">
+          <ul id="logo_menu">
+            <li class="top" id="logo">
+              <img src="img/logo.png" alt="logo图" />
+            </li>
+            <li class="top" id="menu">
+              <a class="top_1" href="#">首页</a>
+            </li>
+            <li
+              class="top dropdown2 noactive"
+              onmouseover="show_menu(this)"
+              onmouseout="hide_menu(this)"
+            >
+              <a href="#">在线演示</a>
+              <b class="small_arrow"></b>
+              <ul class="dropdown-menu2">
+                <li><a href="#####">基础演示</a></li>
+                <li><a href="#">移动应用</a></li>
+                <li><a href="#">PC应用</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li
+              class="top dropdown2 noactive"
+              onmouseover="show_menu(this)"
+              onmouseout="hide_menu(this)"
+            >
+              <a href="#">中文教程</a>
+              <b class="small_arrow"></b>
+              <ul class="dropdown-menu2">
+                <li><a href="#####">基础演示</a></li>
+                <li><a href="#">移动应用</a></li>
+                <li><a href="#">PC应用</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="top">
+              <a href="#">API 文档</a>
+            </li>
+            <li
+              class="top dropdown2 noactive"
+              onmouseover="show_menu(this)"
+              onmouseout="hide_menu(this)"
+            >
+              <a href="#">获取Swiper</a>
+              <b class="small_arrow"></b>
+              <ul class="dropdown-menu2">
+                <li><a href="#####">基础演示</a></li>
+                <li><a href="#">移动应用</a></li>
+                <li><a href="#">PC应用</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li
+              class="top dropdown2 noactive"
+              onmouseover="show_menu(this)"
+              onmouseout="hide_menu(this)"
+            >
+              <a href="#">关于我们</a>
+              <b class="small_arrow"></b>
+              <ul class="dropdown-menu2">
+                <li><a href="#####">基础演示</a></li>
+                <li><a href="#">移动应用</a></li>
+                <li><a href="#">PC应用</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li
+              class="top dropdown2 noactive"
+              onmouseover="show_menu(this)"
+              onmouseout="hide_menu(this)"
+            >
+              <a href="#">Swiper3</a>
+              <b class="small_arrow"></b>
+              <ul class="dropdown-menu2">
+                <li><a href="#####">基础演示</a></li>
+                <li><a href="#">移动应用</a></li>
+                <li><a href="#">PC应用</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li
+              class="top dropdown2 noactive"
+              onmouseover="show_menu(this)"
+              onmouseout="hide_menu(this)"
+            >
+              <a href="#">Swiper2</a>
+              <b class="small_arrow"></b>
+              <ul class="dropdown-menu2">
+                <li><a href="#####">基础演示</a></li>
+                <li><a href="#">移动应用</a></li>
+                <li><a href="#">PC应用</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="top">
+              <a href="#">交流分享</a>
+            </li>
+            <li class="top">
+              <a href="#">Swiper 英文网</a>
+            </li>
+            <li id="search">
+              <div>
+                <form action="">
+                  <input type="text" id="search_text" placeholder="搜索参数" />
+                  <input type="button" id="search_button" value="搜索" />
+                </form>
+              </div>
+            </li>
+          </ul>
         </div>
-        <footer>
-
-        </footer>
+      </header>
+      <div id="banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper" id="swiper1">
+            <div class="swiper-slide" id="swiper-slide1">
+              <div class="inner">
+                <div id="main_theme">
+                  <h1>Swiper<span>5</span>
+                  </h1>
+                </div>
+                <p data-swiper-parallax="-1500">开源、免费、强大的触摸滑动插件</p>
+                <div class="subbtn" data-swiper-parallax="-3000">
+                  <a class="button" href="#" data-swiper-parallax="1000" data-swiper-parallax-duration="">查看Swiper演示</a>
+                  <a class="button" href="#" data-swiper-parallax="1300" data-swiper-parallax-duration="">查看API 文档</a>
+                  <a class="button" href="#" data-swiper-parallax="1600" data-swiper-parallax-duration="">交流、分享Swiper</a>
+                  <a class="button" href="#" data-swiper-parallax="1900" data-swiper-parallax-duration="">回顾Swiper3</a>
+                  <a class="button" href="#" data-swiper-parallax="2200" data-swiper-parallax-duration="">回顾Swiper2<span class="ie7">IE7</span></a>
+                </div>
+                <div class="mainbtn" href="#" data-swiper-parallax="-4500" data-swiper-parallax-duration="">
+                  <a href="#">开始使用 Swiper</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" id="swiper-slide2" style="background: yellow;">Slide 2</div>
+            <div class="swiper-slide" id="swiper-slide3" style="background: pink;">Slide 3</div>
+          </div>
+          <!-- 如果需要分页器 -->
+          <div class="swiper-pagination"></div>
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- 如果需要滚动条 -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      <div id="under_banner">
+        <div class="inner">
+          <div id="anounce">
+            Swiper交友群：群① <b><a href="#">418951634</a></b>
+              &nbsp;&nbsp;&nbsp;&nbsp;群②
+              <b><a href="#">526371207</a></b>
+          </div>
+          <div class="versions">
+            <div class="version version5">
+              <dl>
+                <dt>
+                  <a href="#">swiper5</a>
+                </dt>
+                <dd>
+                  <a href="#">基础演示</a>
+                  <a href="#">移动端应用</a>
+                  <a href="#">PC端应用</a>
+                  <a href="#">API文档</a>
+                </dd>               
+                <!-- <span>Swiper5演示与应用</span> -->
+              </dl>
+            </div>
+            <div class="version version3">
+                <dl>
+                    <dt>
+                      <a href="#">swiper3</a>
+                    </dt>
+                    <dd>
+                      <a href="#">基础演示</a>
+                      <a href="#">移动端应用</a>
+                      <a href="#">PC端应用</a>
+                      <a href="#">API文档</a>
+                    </dd>               
+                    <!-- <span>Swiper3演示与应用</span> -->
+                  </dl>
+            </div>
+            <div class="version version2">
+                <dl>
+                    <dt>
+                      <a href="#">swiper2</a>
+                    </dt>
+                    <dd>
+                      <a href="#">基础演示</a>
+                      <a href="#">实际应用</a><br>
+                      <a href="#">API文档</a>
+                    </dd>               
+                    <!-- <span>Swiper2演示与应用</span> -->
+                  </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mobile_show">
+        <div class="show">
+          <div class="inner">
+            <div class="detail">
+              <h2>Swiper常用于移动端网站的内容触摸滑动</h2>
+              <p>Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。</p>
+              <br>
+              <p>Swiper能实现触屏焦点图、触屏Tab切换、触屏多图切换等常用效果。</p>
+              <p>Swiper开源、免费、稳定、使用简单、功能强大，是架构移动终端网站的重要选择！</p>
+              <br>
+              <p id="p_small">右侧范例来自某讯网，用到了这些特效：</p>
+              <ul>
+                <li>
+                  <span>触摸导航</span><a href="#">freeMode</a>
+                </li>
+                <li>
+                  <span>焦点图</span><a href="#">autoplay</a>
+                </li>
+                <li>
+                  <span>内容tab</span><a href="#">slideTo</a>
+                </li>
+              </ul>
+              <div class="qr_img">
+                <img src="/img/index1.png" alt="">
+              </div>
+              <div class="qr_link">
+                扫一扫或<a href="#">下载</a>
+              </div>
+            </div>
+            <div class="phone_box"></div>
+          </div>
+        </div>
+        <div class="show">
+            <div class="inner">
+              <div class="detail">
+                <h2>Swiper拥有灵活的progress，这是自定义制作3D切换效果的利器</h2>
+                <p>Swiper制作3D切换效果的方法多种多样。<a href="#">cube</a>、<a href="#">coverflow</a>和<a href="#">flip</a>可以轻松的实现3D过渡，如果你想制作其他新颖的切换方式，推荐使用<a href="#">progress</a>。</p>
+                <p>progress可以帮助你获取到滑块的进度索引。</p>
+                <br>
+                <p id="p_small">右侧3d宣传册范例用到了这些特效：</p>
+                <ul>
+                  <li>
+                    <span>获取progress</span><a href="#">watchSlidesProgress</a>
+                  </li>
+                  <li>
+                    <span>垂直切换</span><a href="#">direction</a>
+                  </li>
+                  <li>
+                    <span>过渡回调</span><a href="#">setTransition</a>
+                  </li>
+                </ul>
+                <div class="qr_img">
+                  <img src="/img/index1.png" alt="">
+                </div>
+                <div class="qr_link">
+                  扫一扫或<a href="#">下载</a>
+                </div>
+              </div>
+              <div class="phone_box"></div>
+            </div>
+        </div>
+        <div class="show">
+            <div class="inner">
+              <div class="detail">
+                <h2>在Swiper上加些小动画，制作时下最流行的微展示</h2>
+                <p>使用Swiper再配合一些你喜欢的小动画，你的图片立即变成活灵活现的微场景、微海报。</p>
+                <p>常用的制作动画的方法有CSS3、GreenSock、Anime.js、animate.css等。也推荐使用我们的Swiper Animate小插件，无需学习即可快速制作出精美的切换动画效果。</p>
+                <br>
+                <p>Swiper Animate有大量的demo，下载后进行简单修改即可，是伸手党的最爱。</p>
+                <br>
+                <p id="p_small">右侧liveapp范例用到了这些特效：</p>
+                <ul>
+                  <li>
+                    <span>动画小插件</span><a href="#">Swiper Animate</a>
+                  </li>
+                  <li>
+                    <span>切换后回调</span><a href="#">slideChangeTransitionEnd</a>
+                  </li>
+                </ul>
+                <div class="qr_img">
+                  <img src="/img/index1.png" alt="">
+                </div>
+                <div class="qr_link">
+                  扫一扫或<a href="#">下载</a>
+                </div>
+              </div>
+              <div class="phone_box"></div>
+            </div>
+        </div>
+      </div>
+      <div class="swiper5-feature">
+        <div class="inner">
+          <h2>Swiper 5 的特色功能</h2>
+          <ul>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+            <li>
+              <h3>不依赖框架</h3>
+              <p>Swiper无需加载任何公共库（如jquery）即可运行，这保证了Swiper的轻量和运行速度。Swiper也可以在加载了公共库的环境下安全的运行，如jQuery, Zepto, jQuery Mobile等</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="world_users">
+        <div class="inner">
+          <h2>50,000+ 使用者，200,000+ 网站及应用</h2>
+          <p>用Swiper来制作滑动切换已经成为现今网站或应用的潮流和标准</p>
+          <ul>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+            <li title="华为">
+              <img src="/img/logo_huawei.png" alt="">
+            </li>
+          </ul>
+          <div class="more_user">
+            <a href="#">查看更多企业></a>
+          </div>
+        </div>
+      </div>
+      <div id="bottom_slogan">
+        <span>Swiper完全免费并开源（MIT Licensed）</span>
+        <a href="#">开始使用Swiper</a>
+      </div>
+      <footer>
+        <div class="inner">
+          <div class="foot_link">
+            <h3>网站地图</h3>
+            <ul>
+              <li><a href="#">Swiper5中文网</a></li>
+              <li><a href="#">Swiper3中文网</a></li>
+              <li><a href="#">Swiper2中文网</a></li>
+              <li><a href="#">Swiper资源·交流</a></li>
+              <li><a href="#">日本网站设计欣赏</a></li>
+              <li><a href="#">GreenSock 动画平台</a></li>
+            </ul>
+          </div>
+          <div class="copy_right">
+            Copyright © 2014-2019 Swiper中文网,<a href="#">粤ICP备15001020号</a>, All Rights Reserved。
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-</body>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
 </html>
